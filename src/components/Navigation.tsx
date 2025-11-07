@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import melowLogo from "@/assets/melow-logo.png";
 
 const Navigation = () => {
@@ -16,15 +17,17 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { label: "Sobre", href: "#sobre" },
-    { label: "Serviços", href: "#servicos" },
-    { label: "CEO", href: "#ceo" },
-    { label: "Contato", href: "#contato" },
+    { label: "Sobre", href: "/sobre" },
+    { label: "Serviços", href: "/servicos" },
+    { label: "Valores", href: "/valores" },
+    { label: "Missão", href: "/missao" },
+    { label: "CEO", href: "/ceo" },
+    { label: "Legado", href: "/legado" },
+    { label: "Contato", href: "/contato" },
   ];
 
-  const handleClick = (href: string) => {
+  const handleClick = () => {
     setIsOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -35,8 +38,8 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          <Link 
+            to="/"
             className="flex items-center"
           >
             <img 
@@ -44,19 +47,19 @@ const Navigation = () => {
               alt="Melow Connect" 
               className="h-12"
             />
-          </button>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.href}
-                onClick={() => handleClick(item.href)}
+                to={item.href}
                 className={`font-medium transition-colors hover:text-accent-cyan ${
                   isScrolled ? 'text-foreground hover:text-accent-blue' : 'text-white hover:text-accent-cyan'
                 }`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -74,13 +77,14 @@ const Navigation = () => {
           <div className="md:hidden glass-blue border-t border-accent-blue/30 shadow-glow">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
-                <button
+                <Link
                   key={item.href}
-                  onClick={() => handleClick(item.href)}
+                  to={item.href}
+                  onClick={handleClick}
                   className="block w-full text-left px-4 py-2 font-medium hover:bg-accent-blue/10 hover:text-accent-blue transition-colors"
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>

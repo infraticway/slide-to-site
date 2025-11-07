@@ -26,11 +26,11 @@ const CEO = () => {
                 
                 <div className="space-y-4 w-full">
                   <a 
-                    href="mailto:silveira_erica@hotmail.com"
+                    href="mailto:emelo@melowconnect.com.br"
                     className="flex items-center gap-3 text-white hover:text-white/80 transition-colors"
                   >
                     <Mail className="h-5 w-5" />
-                    <span className="text-sm">silveira_erica@hotmail.com</span>
+                    <span className="text-sm">emelo@melowconnect.com.br</span>
                   </a>
                   <a 
                     href="tel:+5511982012043"
@@ -46,7 +46,7 @@ const CEO = () => {
                     className="flex items-center gap-3 text-white hover:text-white/80 transition-colors"
                   >
                     <Linkedin className="h-5 w-5" />
-                    <span className="text-sm">erica-mélo-b034334</span>
+                    <span className="text-sm">Érica Mélo</span>
                   </a>
                 </div>
               </div>
