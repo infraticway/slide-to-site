@@ -44,6 +44,7 @@ export default {
           "blue-light": "hsl(var(--accent-blue-light))",
           cyan: "hsl(var(--accent-cyan))",
           purple: "hsl(var(--accent-purple))",
+          "purple-light": "hsl(var(--accent-purple-light))",
           teal: "hsl(var(--accent-teal))",
         },
         popover: {

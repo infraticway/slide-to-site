@@ -31,7 +31,7 @@ const Navigation = () => {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-blue shadow-glow' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-soft border-b border-border/50' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -52,8 +52,8 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`font-medium transition-colors hover:text-accent-cyan ${
-                  isScrolled ? 'text-foreground hover:text-accent-blue' : 'text-white hover:text-accent-cyan'
+                className={`font-medium transition-colors ${
+                  isScrolled ? 'text-foreground hover:text-primary' : 'text-white hover:text-white/80'
                 }`}
               >
                 {item.label}
@@ -72,14 +72,14 @@ const Navigation = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden glass-blue border-t border-accent-blue/30 shadow-glow">
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-border/50 shadow-soft">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   to={item.href}
                   onClick={handleClick}
-                  className="block w-full text-left px-4 py-2 font-medium hover:bg-accent-blue/10 hover:text-accent-blue transition-colors"
+                  className="block w-full text-left px-4 py-2 font-medium text-foreground hover:bg-muted hover:text-primary transition-colors"
                 >
                   {item.label}
                 </Link>

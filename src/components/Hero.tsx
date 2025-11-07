@@ -9,24 +9,22 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 gradient-deep-ocean animate-gradient" />
-      <div className="absolute inset-0 gradient-radial-blue opacity-60" />
-      
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzFjNGU4MCIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9nPjwvc3ZnPg==')] opacity-30" />
+      <div className="absolute inset-0 gradient-purple-pink" />
+      <div className="absolute inset-0 gradient-radial-purple opacity-50" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center pt-20">
           <img 
             src={melowLogo} 
             alt="Melow Connect" 
-            className="h-32 md:h-40 mx-auto mb-8 drop-shadow-2xl animate-pulse-glow"
+            className="h-24 md:h-32 mx-auto mb-12 drop-shadow-2xl"
           />
           
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-balance">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 text-balance leading-tight">
             Conectando dados, estratégia e tecnologia
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 text-balance">
+          <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-3xl mx-auto text-balance leading-relaxed">
             Consultoria estratégica para impulsionar empresas internacionais no Brasil e América Latina
           </p>
           
@@ -34,7 +32,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               onClick={scrollToContact}
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8"
+              className="bg-white text-primary hover:bg-white/90 hover:scale-105 text-lg px-10 py-6 shadow-xl transition-all"
             >
               Entre em contato
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -43,7 +41,7 @@ const Hero = () => {
               size="lg" 
               variant="outline"
               onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-white text-white hover:bg-white/10 text-lg px-8"
+              className="border-2 border-white text-white hover:bg-white/15 hover:scale-105 text-lg px-10 py-6 transition-all"
             >
               Saiba mais
             </Button>

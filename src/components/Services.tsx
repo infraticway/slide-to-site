@@ -49,46 +49,45 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-24 bg-gradient-to-br from-accent-teal/5 via-background to-accent-purple/10 relative overflow-hidden">
-      <div className="absolute inset-0 gradient-radial-blue opacity-40" />
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="servicos" className="py-32 bg-gradient-to-b from-muted/30 to-background">
+      <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="h-1 w-20 gradient-teal-blue rounded-full mb-8 mx-auto shadow-glow" />
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+          <div className="h-1 w-16 bg-gradient-to-r from-primary to-accent-purple rounded-full mb-8 mx-auto" />
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
             Áreas de Atuação
           </h2>
           
-          <p className="text-xl text-center text-muted-foreground mb-16 text-balance">
+          <p className="text-xl text-center text-muted-foreground mb-20 text-balance">
             Brand Plan, Business Intelligence & IA
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {mainServices.map((service, index) => (
-              <Card key={index} className="border-none shadow-blue hover:shadow-glow-intense transition-all duration-300 hover:scale-105 glass-blue">
+              <Card key={index} className="border border-border/50 shadow-soft hover:shadow-purple transition-all duration-300 hover:scale-105 bg-card group">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-xl gradient-blue-ocean flex items-center justify-center mb-4 shadow-glow animate-pulse-glow">
-                    <service.icon className="h-7 w-7 text-white" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent-purple flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <service.icon className="h-8 w-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {additionalServices.map((service, index) => (
-              <Card key={index} className="border-none shadow-blue hover:shadow-glow transition-all duration-300 hover:scale-105 glass-blue">
+              <Card key={index} className="border border-border/50 shadow-soft hover:shadow-purple transition-all duration-300 hover:scale-105 bg-card group">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-xl gradient-blue-purple flex items-center justify-center mb-4 shadow-glow">
-                    <service.icon className="h-7 w-7 text-white" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-purple to-accent-purple-light flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <service.icon className="h-8 w-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
