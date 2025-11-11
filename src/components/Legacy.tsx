@@ -1,21 +1,24 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Handshake, Lightbulb, GraduationCap } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Legacy = () => {
+  const { t } = useLanguage();
+  
   const legacyItems = [
     {
       icon: Handshake,
-      title: "Parcerias Ganha-Ganha",
+      titleKey: "legacy.partnerships",
       gradient: "from-blue-500 to-blue-600"
     },
     {
       icon: Lightbulb,
-      title: "Inovação com Propósito",
+      titleKey: "legacy.innovation",
       gradient: "from-accent to-accent-blue"
     },
     {
       icon: GraduationCap,
-      title: "Desenvolvimento de Pessoas e Conhecimento",
+      titleKey: "legacy.development",
       gradient: "from-primary to-primary-light"
     }
   ];
@@ -26,11 +29,11 @@ const Legacy = () => {
         <div className="max-w-6xl mx-auto">
           <div className="h-1 w-16 bg-gradient-to-r from-primary to-accent-cyan rounded-full mb-8 mx-auto" />
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-            Nosso Legado para o Mundo
+            {t('legacy.title')}
           </h2>
           
           <p className="text-xl text-center text-muted-foreground mb-20 max-w-4xl mx-auto text-balance leading-relaxed">
-            Na Melow Connect, acreditamos que o verdadeiro sucesso é construído por meio de conexões significativas. Nosso legado é transformar conhecimento em impacto, tecnologia em propósito e parcerias em prosperidade compartilhada.
+            {t('legacy.description')}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -41,7 +44,7 @@ const Legacy = () => {
                   <div className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${item.gradient} flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
                     <item.icon className="h-10 w-10 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-center leading-tight text-foreground">{item.title}</h3>
+                  <h3 className="text-2xl font-bold text-center leading-tight text-foreground">{t(item.titleKey)}</h3>
                 </CardContent>
               </Card>
             ))}
@@ -50,7 +53,7 @@ const Legacy = () => {
           <Card className="border-none shadow-blue-soft bg-gradient-to-br from-primary to-primary-dark">
             <CardContent className="py-16 px-10">
               <p className="text-2xl md:text-3xl font-bold text-white text-balance text-center leading-relaxed">
-                Nosso legado é construir pontes que transformam negócios e pessoas em histórias de sucesso.
+                {t('legacy.quote')}
               </p>
             </CardContent>
           </Card>

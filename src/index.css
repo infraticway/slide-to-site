@@ -17,14 +17,14 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 60% 15%;
 
-    --primary: 217 91% 60%;
+    --primary: 207 87% 35%;
     --primary-foreground: 0 0% 100%;
     
-    --primary-light: 213 94% 68%;
-    --primary-dark: 221 83% 53%;
+    --primary-light: 207 87% 45%;
+    --primary-dark: 207 87% 25%;
     
-    --accent-blue: 217 91% 60%;
-    --accent-blue-light: 213 94% 68%;
+    --accent-blue: 207 87% 35%;
+    --accent-blue-light: 207 87% 45%;
     --accent-cyan: 189 94% 43%;
     --accent-purple: 271 91% 65%;
     --accent-purple-light: 270 95% 75%;
@@ -68,14 +68,14 @@ All colors MUST be HSL.
     --popover: 210 50% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 207 87% 35%;
+    --primary-foreground: 0 0% 100%;
     
-    --primary-light: 213 94% 68%;
-    --primary-dark: 221 83% 53%;
+    --primary-light: 207 87% 45%;
+    --primary-dark: 207 87% 25%;
     
-    --accent-blue: 217 91% 60%;
-    --accent-blue-light: 213 94% 68%;
+    --accent-blue: 207 87% 35%;
+    --accent-blue-light: 207 87% 45%;
     --accent-cyan: 189 94% 43%;
     --accent-purple: 271 91% 65%;
     --accent-purple-light: 270 95% 75%;

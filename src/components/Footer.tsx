@@ -1,4 +1,7 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -6,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <p className="text-white/90 text-lg">
-            © {currentYear} Melow Connect. Todos os direitos reservados.
+            © {currentYear} Melow Connect. {t('footer.rights')}
           </p>
         </div>
       </div>

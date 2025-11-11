@@ -1,32 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Lightbulb, Star, Handshake } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Values = () => {
-  const purpose = {
-    title: "Nosso Propósito",
-    description: "Conectar estratégias, pessoas e tecnologia para transformar desafios em crescimento real."
-  };
-
+  const { t } = useLanguage();
+  
   const values = [
     {
       icon: Star,
-      title: "Qualidade",
-      description: "Traduzimos análise em precisão e decisões assertivas."
+      titleKey: "values.quality",
+      descKey: "values.qualityDesc"
     },
     {
       icon: Lightbulb,
-      title: "Inovação",
-      description: "Combinamos inteligência humana e IA para criar soluções que geram impacto."
+      titleKey: "values.innovation",
+      descKey: "values.innovationDesc"
     },
     {
       icon: Target,
-      title: "Excelência",
-      description: "Cada projeto é guiado por ética, consistência e visão de longo prazo."
+      titleKey: "values.excellence",
+      descKey: "values.excellenceDesc"
     },
     {
       icon: Handshake,
-      title: "Parcerias",
-      description: "Transformamos relações em conexões duradouras e resultados sustentáveis. Abordagem ganha-ganha."
+      titleKey: "values.partnerships",
+      descKey: "values.partnershipsDesc"
     }
   ];
 
@@ -36,9 +34,9 @@ const Values = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <div className="h-1 w-16 bg-gradient-to-r from-primary to-accent-cyan rounded-full mb-8 mx-auto" />
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">{purpose.title}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">{t('values.purpose')}</h2>
             <p className="text-2xl text-foreground/80 font-medium text-balance max-w-3xl mx-auto leading-relaxed">
-              {purpose.description}
+              {t('values.purposeDesc')}
             </p>
           </div>
 
@@ -49,8 +47,8 @@ const Values = () => {
                   <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent-cyan flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
                     <value.icon className="h-10 w-10 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-center mb-4 text-foreground">{value.title}</h3>
-                  <p className="text-center text-muted-foreground leading-relaxed">{value.description}</p>
+                  <h3 className="text-2xl font-bold text-center mb-4 text-foreground">{t(value.titleKey)}</h3>
+                  <p className="text-center text-muted-foreground leading-relaxed">{t(value.descKey)}</p>
                 </CardContent>
               </Card>
             ))}

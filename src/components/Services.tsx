@@ -1,50 +1,53 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Globe, TrendingUp, Brain, BarChart3, Users, Shield, Network, Award } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
+  const { t } = useLanguage();
+  
   const mainServices = [
     {
       icon: Globe,
-      title: "Entrada no Mercado",
-      description: "Curadoria estratégica de oportunidades e parceiros, selecionando os melhores caminhos — parcerias, distribuidor/CMO, joint ventures ou entrada direta."
+      titleKey: "services.market",
+      descKey: "services.marketDesc"
     },
     {
       icon: TrendingUp,
-      title: "Brand Plan & Go-to-Market",
-      description: "Planejamento e execução de marca com posicionamento e forecasting."
+      titleKey: "services.brand",
+      descKey: "services.brandDesc"
     },
     {
       icon: Brain,
-      title: "Soluções de Tecnologia & IA",
-      description: "Integração de IA e analytics para decisões de negócio."
+      titleKey: "services.tech",
+      descKey: "services.techDesc"
     },
     {
       icon: BarChart3,
-      title: "Business Intelligence & Insights",
-      description: "Dashboards e relatórios preditivos orientados à ação, cálculo premiação da FV."
+      titleKey: "services.bi",
+      descKey: "services.biDesc"
     }
   ];
 
   const additionalServices = [
     {
       icon: Users,
-      title: "Pessoas",
-      description: "Buscamos as pessoas certas para o seu negócio."
+      titleKey: "services.people",
+      descKey: "services.peopleDesc"
     },
     {
       icon: Shield,
-      title: "Governança e Compliance",
-      description: "Suporte jurídico e compliance."
+      titleKey: "services.governance",
+      descKey: "services.governanceDesc"
     },
     {
       icon: Network,
-      title: "Network e Ecossistema",
-      description: "Através da nossa curadoria e expertise de mercado, conectamos o cliente às empresas."
+      titleKey: "services.network",
+      descKey: "services.networkDesc"
     },
     {
       icon: Award,
-      title: "Apoio Regulatório e Qualidade",
-      description: "Identificamos sua necessidade nesse quesito e oferecemos a solução ideal para o momento e tamanho da sua empresa."
+      titleKey: "services.regulatory",
+      descKey: "services.regulatoryDesc"
     }
   ];
 
@@ -54,11 +57,11 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="h-1 w-16 bg-gradient-to-r from-primary to-accent-cyan rounded-full mb-8 mx-auto" />
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-            Áreas de Atuação
+            {t('services.title')}
           </h2>
           
           <p className="text-xl text-center text-muted-foreground mb-20 text-balance">
-            Brand Plan, Business Intelligence & IA
+            {t('services.subtitle')}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
@@ -68,10 +71,10 @@ const Services = () => {
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
+                  <CardTitle className="text-xl text-foreground">{t(service.titleKey)}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{t(service.descKey)}</p>
                 </CardContent>
               </Card>
             ))}
@@ -84,10 +87,10 @@ const Services = () => {
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-blue to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
+                  <CardTitle className="text-xl text-foreground">{t(service.titleKey)}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{t(service.descKey)}</p>
                 </CardContent>
               </Card>
             ))}

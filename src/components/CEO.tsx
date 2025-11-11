@@ -1,14 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, Linkedin } from "lucide-react";
 import ericaPhoto from "@/assets/erica-melo.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CEO = () => {
+  const { t } = useLanguage();
+  
   return (
     <section id="ceo" className="py-32 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="h-1 w-16 bg-gradient-to-r from-primary to-accent-purple rounded-full mb-8 mx-auto" />
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 text-foreground">CEO & Fundadora</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 text-foreground">{t('ceo.title')}</h2>
           
           <Card className="border border-border/50 shadow-purple overflow-hidden bg-card">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-0">
@@ -19,7 +22,7 @@ const CEO = () => {
                   className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-2xl mb-6"
                 />
                 <h3 className="text-3xl font-bold text-white mb-2">Érica Mélo</h3>
-                <p className="text-white/95 text-lg mb-10">CEO & Fundadora</p>
+                <p className="text-white/95 text-lg mb-10">{t('ceo.position')}</p>
                 
                 <div className="space-y-4 w-full">
                   <a 
@@ -50,21 +53,10 @@ const CEO = () => {
               
               <CardContent className="lg:col-span-2 p-10 lg:p-16">
                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                  <p>
-                    Érica Mélo é uma executiva com mais de 25 anos de experiência em desenvolvimento de negócios, excelência comercial e estratégia internacional, atuando em empresas como Unither Pharmaceuticals, Allergan (AbbVie), GlaxoSmithKline, Dr. Reddys e Hypera Pharma.
-                  </p>
-                  
-                  <p>
-                    Possui trajetória consolidada na América Latina e Europa, liderando projetos de Business Development, M&A, licenciamento e entrada de produtos em novos mercados.
-                  </p>
-                  
-                  <p>
-                    MBA em Inteligência Artificial, Ciência de Dados e Big Data para Negócios. Reconhecida por formar equipes de alta performance e implementar estruturas de governança robustas.
-                  </p>
-                  
-                  <p>
-                    Atualmente, lidera a Melow Connect, apoiando empresas internacionais na definição de estratégias de entrada e crescimento no mercado latino-americano.
-                  </p>
+                  <p>{t('ceo.bio1')}</p>
+                  <p>{t('ceo.bio2')}</p>
+                  <p>{t('ceo.bio3')}</p>
+                  <p>{t('ceo.bio4')}</p>
                 </div>
               </CardContent>
             </div>
