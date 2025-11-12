@@ -30,29 +30,30 @@ const Footer = () => {
             </h3>
             <Carousel
               opts={{
-                align: "start",
+                align: "center",
                 loop: true,
               }}
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 2500,
+                  stopOnInteraction: false,
                 }),
               ]}
               className="w-full"
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-4">
                 {partners.map((partner, index) => (
-                  <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-4 md:basis-1/3 lg:basis-1/3">
                     <a
                       href={partner.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center p-8 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 h-32"
+                      className="flex items-center justify-center p-6 bg-white rounded-lg hover:scale-105 transition-all duration-300 h-28 shadow-lg hover:shadow-xl"
                     >
                       <img
                         src={partner.logo}
-                        alt={partner.name}
-                        className="max-h-20 max-w-full object-contain"
+                        alt={`${partner.name} logo`}
+                        className="max-h-16 max-w-full object-contain"
                       />
                     </a>
                   </CarouselItem>
