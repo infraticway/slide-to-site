@@ -31,7 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.description': 'A Melow Connect é uma consultoria estratégica que conecta dados, estratégia e inovação para impulsionar a entrada e o crescimento de empresas internacionais no Brasil e na América Latina.',
     'services.title': 'Áreas de Atuação',
     'services.subtitle': 'Novos negócios, Brand Plan, Business Intelligence & IA',
-    'services.newBusiness': 'Novos Negócios',
+    'services.newBusiness': 'Business Development',
     'services.newBusinessDesc': 'Desenvolvimento estratégico de oportunidades e expansão de mercado',
     'services.market': 'Entrada no Mercado',
     'services.marketDesc': 'Curadoria estratégica de oportunidades e parceiros, selecionando os melhores caminhos — parcerias, distribuidor/CMO, joint ventures ou entrada direta.',
@@ -83,6 +83,7 @@ const translations: Record<Language, Record<string, string>> = {
     'ceo.bio3': 'MBA em Inteligência Artificial, Ciência de Dados e Big Data para Negócios. Reconhecida por formar equipes de alta performance e implementar estruturas de governança robustas.',
     'ceo.bio4': 'Atualmente, lidera a Melow Connect, apoiando empresas internacionais na definição de estratégias de entrada e crescimento no mercado latino-americano.',
     'footer.rights': 'Todos os direitos reservados.',
+    'footer.partners': 'Nossos Parceiros',
   },
   'en': {
     'hero.title': 'Connecting data, strategy and technology',
@@ -104,7 +105,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.description': 'Melow Connect is a strategic consulting firm that connects data, strategy and innovation to drive the entry and growth of international companies in Brazil and Latin America.',
     'services.title': 'Areas of Expertise',
     'services.subtitle': 'New Business, Brand Plan, Business Intelligence & AI',
-    'services.newBusiness': 'New Business',
+    'services.newBusiness': 'Business Development',
     'services.newBusinessDesc': 'Strategic development of opportunities and market expansion',
     'services.market': 'Market Entry',
     'services.marketDesc': 'Strategic curation of opportunities and partners, selecting the best paths — partnerships, distributor/CMO, joint ventures or direct entry.',
@@ -156,6 +157,7 @@ const translations: Record<Language, Record<string, string>> = {
     'ceo.bio3': 'MBA in Artificial Intelligence, Data Science and Big Data for Business. Recognized for building high-performance teams and implementing robust governance structures.',
     'ceo.bio4': 'Currently leads Melow Connect, supporting international companies in defining entry and growth strategies in the Latin American market.',
     'footer.rights': 'All rights reserved.',
+    'footer.partners': 'Our Partners',
   },
   'es': {
     'hero.title': 'Conectando datos, estrategia y tecnología',
@@ -177,7 +179,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.description': 'Melow Connect es una consultoría estratégica que conecta datos, estrategia e innovación para impulsar la entrada y el crecimiento de empresas internacionales en Brasil y América Latina.',
     'services.title': 'Áreas de Actuación',
     'services.subtitle': 'Nuevos Negocios, Brand Plan, Business Intelligence & IA',
-    'services.newBusiness': 'Nuevos Negocios',
+    'services.newBusiness': 'Business Development',
     'services.newBusinessDesc': 'Desarrollo estratégico de oportunidades y expansión de mercado',
     'services.market': 'Entrada al Mercado',
     'services.marketDesc': 'Curaduría estratégica de oportunidades y socios, seleccionando los mejores caminos — alianzas, distribuidor/CMO, joint ventures o entrada directa.',
@@ -229,6 +231,7 @@ const translations: Record<Language, Record<string, string>> = {
     'ceo.bio3': 'MBA en Inteligencia Artificial, Ciencia de Datos y Big Data para Negocios. Reconocida por formar equipos de alto desempeño e implementar estructuras de gobernanza robustas.',
     'ceo.bio4': 'Actualmente, lidera Melow Connect, apoyando empresas internacionales en la definición de estrategias de entrada y crecimiento en el mercado latinoamericano.',
     'footer.rights': 'Todos los derechos reservados.',
+    'footer.partners': 'Nuestros Socios',
   },
 };
 

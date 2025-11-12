@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Partners Carousel */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-center text-white">
-              Nossos Parceiros
+              {t('footer.partners')}
             </h3>
             <Carousel
               opts={{
