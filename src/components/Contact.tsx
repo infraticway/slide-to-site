@@ -27,7 +27,7 @@ const Contact = () => {
             {t('contact.subtitle')}
           </p>
 
-          <Card className="border-none shadow-2xl bg-white">
+          <Card className="border-none shadow-2xl bg-gradient-to-br from-white via-primary-light/5 to-accent-cyan/10 backdrop-blur-sm">
             <CardContent className="py-12 px-8">
               <div className="space-y-6">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
