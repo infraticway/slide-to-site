@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Services = () => {
   const { t } = useLanguage();
   
-  const mainServices = [
+  const services = [
     {
       icon: Briefcase,
       titleKey: "services.newBusiness",
@@ -30,10 +30,7 @@ const Services = () => {
       icon: BarChart3,
       titleKey: "services.bi",
       descKey: "services.biDesc"
-    }
-  ];
-
-  const additionalServices = [
+    },
     {
       icon: Users,
       titleKey: "services.people",
@@ -69,27 +66,11 @@ const Services = () => {
             {t('services.subtitle')}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {mainServices.map((service, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
               <Card key={index} className="border border-border/50 shadow-soft hover:shadow-blue-soft transition-all duration-300 hover:scale-105 bg-card group">
                 <CardHeader>
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <CardTitle className="text-xl text-foreground">{t(service.titleKey)}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">{t(service.descKey)}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {additionalServices.map((service, index) => (
-              <Card key={index} className="border border-border/50 shadow-soft hover:shadow-blue-soft transition-all duration-300 hover:scale-105 bg-card group">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent-blue to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-xl text-foreground">{t(service.titleKey)}</CardTitle>
