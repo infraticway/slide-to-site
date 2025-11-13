@@ -39,7 +39,7 @@ const Footer = () => {
                   stopOnInteraction: false,
                 }),
               ]}
-              className="w-full max-w-md mx-auto"
+              className="w-full max-w-lg mx-auto"
             >
               <CarouselContent>
                 {partners.map((partner, index) => (
@@ -48,12 +48,12 @@ const Footer = () => {
                       href={partner.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center p-8 transition-all duration-300 h-32"
+                      className="flex items-center justify-center p-12 transition-all duration-300 h-48"
                     >
                       <img
                         src={partner.logo}
                         alt={`${partner.name} logo`}
-                        className="max-h-24 max-w-full object-contain drop-shadow-lg"
+                        className="max-h-36 max-w-full object-contain drop-shadow-lg"
                       />
                     </a>
                   </CarouselItem>
