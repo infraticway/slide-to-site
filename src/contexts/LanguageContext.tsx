@@ -238,7 +238,7 @@ const translations: Record<Language, Record<string, string>> = {
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>(() => {
     const saved = localStorage.getItem('language');
-    return (saved as Language) || 'pt-BR';
+    return (saved as Language) || 'en';
   });
 
   useEffect(() => {
