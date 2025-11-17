@@ -24,7 +24,7 @@ const Hero = () => {
           <img 
             src={melowLogo} 
             alt="Melow Connect" 
-            className="h-48 md:h-64 mx-auto mb-12 drop-shadow-2xl"
+            className="h-56 md:h-80 mx-auto mb-12 drop-shadow-2xl"
           />
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 text-balance leading-tight">
