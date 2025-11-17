@@ -27,11 +27,11 @@ const Hero = () => {
             className="h-56 md:h-80 mx-auto mb-12 drop-shadow-2xl"
           />
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 text-balance leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-balance leading-tight">
             {t('hero.title')}
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-3xl mx-auto text-balance leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-4xl mx-auto text-balance leading-relaxed">
             {t('hero.subtitle')}
           </p>
           
@@ -41,16 +41,16 @@ const Hero = () => {
               onClick={scrollToContact}
               className="bg-white text-primary hover:bg-white/90 hover:scale-105 text-lg px-10 py-6 shadow-xl transition-all"
             >
-              {t('hero.contact')}
+              {t('hero.cta1')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
               size="lg" 
               variant="outline-white"
-              onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={scrollToContact}
               className="hover:scale-105 text-lg px-10 py-6 transition-all"
             >
-              {t('hero.learnMore')}
+              {t('hero.cta2')}
             </Button>
           </div>
         </div>

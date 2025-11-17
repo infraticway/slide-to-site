@@ -5,6 +5,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { Linkedin, Instagram } from "lucide-react";
 import ticwayLogo from "@/assets/ticway-logo.png";
 import luxtiaLogo from "@/assets/luxtia-logo.png";
 import raqaLogo from "@/assets/raqa-logo.png";
@@ -68,8 +69,30 @@ const Footer = () => {
             </Carousel>
           </div>
 
+          {/* Social Links */}
+          <div className="flex justify-center gap-6 border-t border-white/20 pt-8">
+            <a
+              href="https://www.linkedin.com/company/melowconnect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all hover:scale-110"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-6 w-6 text-white" />
+            </a>
+            <a
+              href="https://instagram.com/melowconnect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all hover:scale-110"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-6 w-6 text-white" />
+            </a>
+          </div>
+
           {/* Copyright */}
-          <div className="text-center border-t border-white/20 pt-8">
+          <div className="text-center">
             <p className="text-white/90 text-lg">
               © {currentYear} Melow Connect. {t('footer.rights')}
             </p>

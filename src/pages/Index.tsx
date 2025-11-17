@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import WhyBrazil from "@/components/WhyBrazil";
 import Values from "@/components/Values";
 import Mission from "@/components/Mission";
 import CEO from "@/components/CEO";
@@ -16,6 +18,8 @@ const Index = () => {
       <Hero />
       <About />
       <Services />
+      <WhyChooseUs />
+      <WhyBrazil />
       <Values />
       <Mission />
       <CEO />
