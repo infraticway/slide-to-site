@@ -44,7 +44,7 @@ const Navigation = () => {
             <img 
               src={melowLogo} 
               alt="Melow Connect" 
-              className="h-20 md:h-24"
+              className="h-24 md:h-32"
             />
           </Link>
 
