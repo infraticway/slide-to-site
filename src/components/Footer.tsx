@@ -46,23 +46,28 @@ const Footer = () => {
                   stopOnInteraction: false,
                 }),
               ]}
-              className="w-full max-w-lg mx-auto"
+              className="w-full max-w-3xl mx-auto"
             >
               <CarouselContent>
-                {partners.map((partner, index) => (
-                  <CarouselItem key={index}>
-                    <a
-                      href={partner.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center p-12 transition-all duration-300 h-48"
-                    >
-                      <img
-                        src={partner.logo}
-                        alt={`${partner.name} logo`}
-                        className="max-h-36 max-w-full object-contain drop-shadow-lg"
-                      />
-                    </a>
+                {Array.from({ length: Math.ceil(partners.length / 2) }).map((_, slideIndex) => (
+                  <CarouselItem key={slideIndex}>
+                    <div className="grid grid-cols-2 gap-8 p-8">
+                      {partners.slice(slideIndex * 2, slideIndex * 2 + 2).map((partner, idx) => (
+                        <a
+                          key={idx}
+                          href={partner.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center transition-all duration-300 h-48 hover:scale-110"
+                        >
+                          <img
+                            src={partner.logo}
+                            alt={`${partner.name} logo`}
+                            className="max-h-32 max-w-full object-contain drop-shadow-lg"
+                          />
+                        </a>
+                      ))}
+                    </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
