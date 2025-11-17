@@ -4,7 +4,6 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import WhyBrazil from "@/components/WhyBrazil";
-import Values from "@/components/Values";
 import CEO from "@/components/CEO";
 import Legacy from "@/components/Legacy";
 import Contact from "@/components/Contact";
@@ -19,7 +18,7 @@ const Index = () => {
       <Services />
       <WhyChooseUs />
       <WhyBrazil />
-      <Values />
+      {/* Values section moved to /values page to avoid duplication on Home */}
       <CEO />
       <Legacy />
       <Contact />
