@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, MessageCircle } from "lucide-react";
 import ericaPhoto from "@/assets/erica-melo.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -38,6 +38,15 @@ const CEO = () => {
                   >
                     <Phone className="h-5 w-5" />
                     <span className="text-sm">+55 11 98201-2043</span>
+                  </a>
+                  <a 
+                    href="https://wa.me/5511982012043"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-white hover:text-white/80 transition-colors"
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                    <span className="text-sm">WhatsApp</span>
                   </a>
                   <a 
                     href="https://www.linkedin.com/in/%C3%A9rica-m%C3%A9lo-b034334/"
