@@ -1,12 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Handshake, Lightbulb, GraduationCap } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import liberaLogo from "@/assets/libera-logo.webp";
-import avantiLogo from "@/assets/avanti-logo.png";
-import melowLogo from "@/assets/melow-logo.png";
-import raqaLogo from "@/assets/raqa-logo.png";
-import ticwayLogo from "@/assets/ticway-logo.png";
-import luxtiaLogo from "@/assets/luxtia-logo.png";
 
 const Legacy = () => {
   const { t } = useLanguage();
@@ -63,32 +57,6 @@ const Legacy = () => {
               </p>
             </CardContent>
           </Card>
-
-          <div className="mt-20">
-            <h3 className="text-3xl font-bold text-center mb-12 text-foreground">
-              {t('legacy.partners')}
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-              <a href="https://liberabiopharma.com/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-300">
-                <img src={liberaLogo} alt="Libera Biopharma" className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
-              </a>
-              <a href="https://avantifarmaceutica.com.br/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-300">
-                <img src={avantiLogo} alt="Avanti Farmacêutica" className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
-              </a>
-              <a href="#" className="hover:scale-110 transition-transform duration-300">
-                <img src={melowLogo} alt="Melow" className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
-              </a>
-              <a href="#" className="hover:scale-110 transition-transform duration-300">
-                <img src={raqaLogo} alt="Raqa" className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
-              </a>
-              <a href="#" className="hover:scale-110 transition-transform duration-300">
-                <img src={ticwayLogo} alt="Ticway" className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
-              </a>
-              <a href="#" className="hover:scale-110 transition-transform duration-300">
-                <img src={luxtiaLogo} alt="Luxtia" className="h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
