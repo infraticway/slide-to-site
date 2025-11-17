@@ -22,6 +22,7 @@ const Navigation = () => {
   const navItems = [
     { label: t('nav.about'), href: "/sobre" },
     { label: t('nav.services'), href: "/servicos" },
+    { label: t('nav.news'), href: "/news" },
     { label: t('nav.values'), href: "/valores" },
     { label: t('nav.ceo'), href: "/ceo" },
     { label: t('nav.contact'), href: "/contato" },
