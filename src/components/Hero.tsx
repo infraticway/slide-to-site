@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import melowLogo from "@/assets/melow-logo-white.png";
+import melowLogo from "@/assets/melow-logo-white-full.png";
 import heroBackground from "@/assets/hero-background.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -24,7 +24,7 @@ const Hero = () => {
           <img 
             src={melowLogo} 
             alt="Melow Connect" 
-            className="h-32 md:h-40 mx-auto mb-12 drop-shadow-2xl opacity-100 mix-blend-lighten"
+            className="h-48 md:h-64 mx-auto mb-12 drop-shadow-2xl"
           />
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 text-balance leading-tight">
