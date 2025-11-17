@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, Linkedin, MessageCircle } from "lucide-react";
-import melowLogo from "@/assets/melow-logo.png";
+import melowLogo from "@/assets/melow-logo-black.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
           <img 
             src={melowLogo} 
             alt="Melow Connect" 
-            className="h-24 mx-auto mb-12 drop-shadow-2xl"
+            className="h-40 md:h-56 mx-auto mb-12 drop-shadow-2xl"
           />
           
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
