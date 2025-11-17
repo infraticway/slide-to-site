@@ -123,7 +123,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.email': 'Send email',
     'contact.call': 'Call',
     'contact.linkedin': 'Connect on LinkedIn',
-    'footer.partners': 'Our Partners',
+    'footer.partners': 'Our Clients & Partners',
     'footer.rights': 'All rights reserved.',
   },
   'pt-BR': {
@@ -238,7 +238,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.email': 'E-mail',
     'contact.call': 'Ligar',
     'contact.linkedin': 'LinkedIn',
-    'footer.partners': 'Parceiros',
+    'footer.partners': 'Nossos clientes e Parceiros',
     'footer.rights': 'Todos os direitos reservados.',
   },
   'es': {
@@ -353,7 +353,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.email': 'Email',
     'contact.call': 'Llamar',
     'contact.linkedin': 'LinkedIn',
-    'footer.partners': 'Socios',
+    'footer.partners': 'Nuestros clientes y Socios',
     'footer.rights': 'Derechos reservados.',
   }
 };
