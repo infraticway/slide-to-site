@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, Linkedin } from "lucide-react";
-import melowLogo from "@/assets/melow-logo.svg";
+import melowLogo from "@/assets/melow-logo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
