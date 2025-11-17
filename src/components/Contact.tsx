@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, MessageCircle } from "lucide-react";
 import melowLogo from "@/assets/melow-logo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -27,7 +27,7 @@ const Contact = () => {
             {t('contact.subtitle')}
           </p>
 
-          <Card className="border-4 border-primary rounded-3xl shadow-2xl bg-white overflow-hidden">
+            <Card className="border-4 border-primary rounded-3xl shadow-2xl bg-white overflow-hidden">
             <CardContent className="py-12 px-8">
               <div className="space-y-6">
                 <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
@@ -54,7 +54,23 @@ const Contact = () => {
                   </Button>
                 </div>
 
-                <div className="pt-8">
+                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+                  <Button 
+                    size="lg"
+                    asChild
+                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white w-full md:w-auto px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 rounded-xl"
+                  >
+                    <a 
+                      href="https://wa.me/5511982012043"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <MessageCircle className="h-5 w-5" />
+                      WhatsApp
+                    </a>
+                  </Button>
+
                   <Button 
                     size="lg"
                     asChild
