@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import melowLogo from "@/assets/melow-logo.png";
+import melowLogo from "@/assets/melow-logo.svg";
 import heroBackground from "@/assets/hero-background.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
