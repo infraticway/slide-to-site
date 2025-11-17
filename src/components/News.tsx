@@ -62,24 +62,48 @@ const News = () => {
             {t('news.subtitle')}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-            {categories.map((category, index) => (
-              <Card 
-                key={index} 
-                className="border border-border/50 shadow-soft hover:shadow-blue-soft transition-all duration-300 hover:scale-105 bg-card group cursor-pointer"
-                onClick={() => category.link && window.open(category.link, '_blank')}
-              >
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <category.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <CardTitle className="text-xl text-foreground">{t(category.titleKey)}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">{t(category.descKey)}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="flex flex-col gap-8 mb-24">
+            {/* First row with 3 cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {categories.slice(0, 3).map((category, index) => (
+                <Card 
+                  key={index} 
+                  className="border border-border/50 shadow-soft hover:shadow-blue-soft transition-all duration-300 hover:scale-105 bg-card group cursor-pointer"
+                  onClick={() => category.link && window.open(category.link, '_blank')}
+                >
+                  <CardHeader>
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                      <category.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl text-foreground">{t(category.titleKey)}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground leading-relaxed">{t(category.descKey)}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            
+            {/* Second row with 2 cards centered */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full">
+              {categories.slice(3).map((category, index) => (
+                <Card 
+                  key={index + 3} 
+                  className="border border-border/50 shadow-soft hover:shadow-blue-soft transition-all duration-300 hover:scale-105 bg-card group cursor-pointer"
+                  onClick={() => category.link && window.open(category.link, '_blank')}
+                >
+                  <CardHeader>
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent-cyan flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                      <category.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <CardTitle className="text-xl text-foreground">{t(category.titleKey)}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground leading-relaxed">{t(category.descKey)}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           {/* Articles & Quick Reads Section */}
