@@ -19,8 +19,8 @@ const Index = () => {
       <WhyChooseUs />
       <WhyBrazil />
       {/* Values section moved to /values page to avoid duplication on Home */}
-      <CEO />
       <Legacy />
+      <CEO />
       <Contact />
       <Footer />
     </div>
