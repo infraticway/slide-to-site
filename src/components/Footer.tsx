@@ -74,7 +74,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 border-t border-white/20 pt-8">
             <a
-              href="https://www.linkedin.com/company/melowconnect"
+              href="https://www.linkedin.com/company/melow-connect/posts/?feedView=all"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all hover:scale-110"
