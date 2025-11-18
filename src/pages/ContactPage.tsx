@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const ContactPage = () => {
   return (
@@ -8,6 +9,7 @@ const ContactPage = () => {
       <Navigation />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };

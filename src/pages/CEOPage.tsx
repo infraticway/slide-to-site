@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import CEO from "@/components/CEO";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const CEOPage = () => {
   return (
@@ -8,6 +9,7 @@ const CEOPage = () => {
       <Navigation />
       <CEO />
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
