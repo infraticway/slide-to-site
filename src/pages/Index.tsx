@@ -8,6 +8,7 @@ import CEO from "@/components/CEO";
 import Legacy from "@/components/Legacy";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
       <CEO />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
