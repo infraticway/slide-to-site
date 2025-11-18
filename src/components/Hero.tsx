@@ -11,6 +11,15 @@ const Hero = () => {
     document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const downloadDeck = () => {
+    const link = document.createElement('a');
+    link.href = '/Melow_Connect_Capabilities_Deck.pdf';
+    link.download = 'Melow_Connect_Capabilities_Deck.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
@@ -47,7 +56,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline-white"
-              onClick={scrollToContact}
+              onClick={downloadDeck}
               className="hover:scale-105 text-lg px-10 py-6 transition-all"
             >
               {t('hero.cta2')}
