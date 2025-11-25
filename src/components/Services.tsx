@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, Handshake, Shield, BarChart3 } from "lucide-react";
+import { TrendingUp, Handshake, Shield, BarChart3, Users } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
@@ -45,6 +45,17 @@ const Services = () => {
         "services.pillar4.item2",
         "services.pillar4.item3",
         "services.pillar4.item4"
+      ]
+    },
+    {
+      icon: Users,
+      titleKey: "services.pillar5.title",
+      items: [
+        "services.pillar5.item1",
+        "services.pillar5.item2",
+        "services.pillar5.item3",
+        "services.pillar5.item4",
+        "services.pillar5.item5"
       ]
     }
   ];
