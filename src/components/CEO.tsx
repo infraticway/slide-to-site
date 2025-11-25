@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, Linkedin, MessageCircle } from "lucide-react";
-import ericaPhoto from "@/assets/erica-melo.jpg";
+import ericaPhoto from "@/assets/erica-melo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const CEO = () => {
