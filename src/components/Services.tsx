@@ -73,7 +73,7 @@ const Services = () => {
             {t('services.subtitle')}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 [&>*:last-child:nth-child(odd)]:md:col-span-2 [&>*:last-child:nth-child(odd)]:md:max-w-2xl [&>*:last-child:nth-child(odd)]:md:mx-auto">
             {services.map((service, index) => (
               <Card key={index} className="border border-border/50 shadow-soft hover:shadow-blue-soft transition-all duration-300 hover:scale-[1.02] bg-card group">
                 <CardHeader>
