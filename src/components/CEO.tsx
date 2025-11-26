@@ -19,7 +19,7 @@ const CEO = () => {
                 <img 
                   src={ericaPhoto}
                   alt="Érica Mélo" 
-                  className="w-64 h-64 rounded-full object-cover object-[center_30%] border-4 border-white shadow-2xl mb-6"
+                  className="w-64 h-64 rounded-full object-cover object-[center_20%] border-4 border-white shadow-2xl mb-6"
                 />
                 <h3 className="text-3xl font-bold text-white mb-2">Érica Mélo</h3>
                 <p className="text-white/95 text-lg mb-10">{t('ceo.position')}</p>
