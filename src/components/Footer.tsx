@@ -12,6 +12,7 @@ import raqaLogo from "@/assets/raqa-logo.png";
 import liberaLogo from "@/assets/libera-logo.webp";
 import avantiLogo from "@/assets/avanti-logo.png";
 import legisLogo from "@/assets/legis-logo.png";
+import btqLogo from "@/assets/btq-logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -24,6 +25,7 @@ const Footer = () => {
     { name: "TICWay", logo: ticwayLogo, url: "https://ticway.com.br/" },
     { name: "Luxtia", logo: luxtiaLogo, url: "https://luxtia.com.br/" },
     { name: "Legis", logo: legisLogo, url: "https://legisconsultoria.com.br/" },
+    { name: "BTQ Life Sciences", logo: btqLogo, url: "https://btqlife.com/" },
   ];
 
   return (
